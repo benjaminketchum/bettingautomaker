@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Betting AutoMaker — Terminal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="terminal">
+    <div class="header">Betting AutoMaker — Terminal</div>
+
+    <div class="controls">
+      <label>Players:
+        <select id="playerCount">
+          <option>2</option>
+          <option selected>3</option>
+          <option>4</option>
+        </select>
+      </label>
+      <label>Start points: <input id="startPoints" type="number" value="1000" min="1"></label>
+      <label>Min bet: <input id="minBet" type="number" value="10" min="1"></label>
+      <button id="newGame">New Game</button>
+      <button id="startRound">Start Round (auto-bet min)</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <div class="status">Pot: <span id="pot">0</span></div>
+
+    <div id="players" class="players"></div>
+
+    <div class="footer">Click "Declare Winner" to award the pot. Players auto-bet the min for the next round.</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
