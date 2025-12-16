@@ -1,0 +1,2 @@
+# bettingautomaker
+yes
